@@ -1,7 +1,7 @@
 # Generic database repository:
 
 [![Test Suite](https://github.com/alexpro2022/users_service-FastAPI/actions/workflows/main.yml/badge.svg)](https://github.com/alexpro2022/users_service-FastAPI/actions/workflows/main.yml)
-[![codecov](https://codecov.io/gh/alexpro2022/generic-db-repository/graph/badge.svg?token=Y0F4lINe5B)](https://codecov.io/gh/alexpro2022/generic-db-repository)
+[![codecov](https://codecov.io/gh/alexpro2022/users_service-FastAPI/graph/badge.svg?token=s7OXPe3tw9)](https://codecov.io/gh/alexpro2022/users_service-FastAPI)
 
 <br>
 
