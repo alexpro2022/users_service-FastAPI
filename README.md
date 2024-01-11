@@ -72,7 +72,7 @@ docker rmi component
 3. Установите в виртуальное окружение все необходимые зависимости из файла **requirements.txt**:
 ```bash
 python -m pip install --upgrade pip
-pip install -r component/requirements.txt
+pip install -r requirements.txt
 ```
 
 4.  Для запуска тестов выполните команду:
