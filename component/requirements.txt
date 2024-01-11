@@ -1,7 +1,0 @@
-coverage
-pytest
-pytest-asyncio
-
-aiosqlite
-fastapi
-sqlalchemy
