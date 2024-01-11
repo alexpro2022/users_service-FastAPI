@@ -1,7 +1,7 @@
 # Generic database repository:
 
 [![Test Suite](https://github.com/alexpro2022/users_service-FastAPI/actions/workflows/main.yml/badge.svg)](https://github.com/alexpro2022/users_service-FastAPI/actions/workflows/main.yml)
-[![codecov](https://codecov.io/gh/alexpro2022/generic-db-repository/graph/badge.svg?token=Y0F4lINe5B)](https://codecov.io/gh/alexpro2022/generic-db-repository)
+[![codecov](https://codecov.io/gh/alexpro2022/users_service-FastAPI/graph/badge.svg?token=s7OXPe3tw9)](https://codecov.io/gh/alexpro2022/users_service-FastAPI)
 
 <br>
 
@@ -72,7 +72,7 @@ docker rmi component
 3. Установите в виртуальное окружение все необходимые зависимости из файла **requirements.txt**:
 ```bash
 python -m pip install --upgrade pip
-pip install -r component/requirements.txt
+pip install -r requirements.txt
 ```
 
 4.  Для запуска тестов выполните команду:
