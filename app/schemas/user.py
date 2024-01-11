@@ -18,7 +18,7 @@ class UserCreate(BaseModel):
             emailinfo = validate_email(field_value)  # , check_deliverability=False)
             email = emailinfo.normalized
         except EmailNotValidError as e:
-            # print(str(e))
+            print(str(e))
             raise ValueError from e
         return email
 
