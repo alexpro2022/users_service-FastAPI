@@ -1,6 +1,6 @@
 # Generic database repository:
 
-[![Test Suite](https://github.com/alexpro2022/generic-db-repository/actions/workflows/main.yml/badge.svg)](https://github.com/alexpro2022/generic-db-repository/actions/workflows/main.yml)
+[![Test Suite](https://github.com/alexpro2022/users_service-FastAPI/actions/workflows/main.yml/badge.svg)](https://github.com/alexpro2022/users_service-FastAPI/actions/workflows/main.yml)
 [![codecov](https://codecov.io/gh/alexpro2022/generic-db-repository/graph/badge.svg?token=Y0F4lINe5B)](https://codecov.io/gh/alexpro2022/generic-db-repository)
 
 <br>
@@ -41,8 +41,8 @@
 1. Клонируйте репозиторий с GitHub и введите данные для переменных окружения (значения даны для примера, но их можно оставить):
 
 ```bash
-git clone https://github.com/alexpro2022/generic-db-repository.git
-cd generic-db-repository
+git clone https://github.com/alexpro2022/users_service-FastAPI.git
+cd users_service-FastAPI
 ```
 <br>
 <details><summary>В docker-контейнере</summary><br>
