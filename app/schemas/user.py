@@ -9,8 +9,8 @@ from app.core import settings
 class UserCreate(BaseModel):
     username: str = Field(max_length=settings.username_max_length,
                           min_length=settings.username_min_length,
-                          json_schema_extra={'example': 'New username'})
-    email: str = Field(json_schema_extra={'example': 'username@email.ru'})
+                          json_schema_extra={'example': 'Username'})
+    email: str = Field(json_schema_extra={'example': 'username@yandex.ru'})
 
     @field_validator('email')
     def validate_email_field(cls, field_value: str):
