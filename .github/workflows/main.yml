@@ -35,7 +35,7 @@ jobs:
             pytest-cov
       - name: Run Tests
         run: |
-          pytest --cov --cov-report=xml
+          pytest --cov --cov-report=xml --cov-config=.coveragerc
       - name: Upload coverage reports to Codecov with GitHub Action
         uses: codecov/codecov-action@v3
         with:
