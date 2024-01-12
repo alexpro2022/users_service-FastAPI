@@ -15,11 +15,10 @@ class UserCreate(BaseModel):
     @field_validator('email')
     def validate_email_field(cls, field_value: str):
         try:
-            emailinfo = validate_email(field_value)  # , check_deliverability=False)
+            emailinfo = validate_email(field_value)
             email = emailinfo.normalized
         except EmailNotValidError as e:
-            # print(str(e))
-            raise ValueError from e
+            raise ValueError(str(e))
         return email
 
 
