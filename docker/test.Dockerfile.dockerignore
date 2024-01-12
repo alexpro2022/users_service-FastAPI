@@ -1,5 +1,5 @@
 *
 !app
 !setup.cfg
-!requirements.txt
+!requirements/test.requirements.txt
 !tests

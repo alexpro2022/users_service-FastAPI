@@ -6,8 +6,9 @@ from httpx import AsyncClient
 from app.core import Base, get_async_session
 from app.main import app
 from app.models.user import User
+from app.repositories.generic_db_repo.tests.conftest import (
+    TestingSessionLocal, engine, get_test_session)
 from app.repositories.user_repository import UserRepository
-from app.repositories.generic_db_repo.tests.conftest import get_test_session, engine, TestingSessionLocal
 from app.schemas.user import UserCreate
 
 from .data import *
