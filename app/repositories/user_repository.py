@@ -13,15 +13,15 @@ class UserRepository(CRUDBaseRepository):
     def __init__(self, session: async_session):
         super().__init__(User, session)
 
-    def has_permission(self, *args, **kwargs) -> None:  # obj: User, user: User) -> None:
+    def has_permission(self, *args, **kwargs) -> None:
         """Always allowed in the project."""
         pass
 
-    def is_delete_allowed(self, *args, **kwargs) -> None:  # obj: User) -> None:
+    def is_delete_allowed(self, *args, **kwargs) -> None:
         """Always allowed in the project."""
         pass
 
-    def is_update_allowed(self, *args, **kwargs) -> None:  # obj: User, payload: dict) -> None:
+    def is_update_allowed(self, *args, **kwargs) -> None:
         """Always allowed in the project."""
         pass
 

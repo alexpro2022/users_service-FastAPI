@@ -49,10 +49,10 @@ cd users_service-FastAPI
 
 2. Из корневой директории проекта выполните команду:
 ```bash
-docker build -f ./docker/test.Dockerfile -t component .
-docker run --name tests component
+docker build -f ./docker/test.Dockerfile -t app .
+docker run --name tests app
 docker container rm tests
-docker rmi component
+docker rmi app
 ```
 <h1></h1>
 </details>

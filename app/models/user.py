@@ -16,5 +16,5 @@ class User(Base):
             f'\nid: {self.id}'
             f'\nusername: {self.username},'
             f'\nemail: {self.email},'
-            f'\nregistration date: {self.registration_date},\n'
+            f'\nregistration_date: {self.registration_date},\n'
         )
