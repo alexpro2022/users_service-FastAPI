@@ -95,7 +95,7 @@ nano .env
 3. Установите в виртуальное окружение все необходимые зависимости из файла **requirements.txt**:
 ```bash
 python -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirements/test.requirements.txt
 ```
 
 4. В проекте уже инициализирована система миграций Alembic с настроенной автогенерацией имен внешних ключей моделей и создан файл первой миграции. Чтобы ее применить, необходимо выполнить команду:
