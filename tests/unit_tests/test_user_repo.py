@@ -1,8 +1,8 @@
-from typing import Callable
-
 import pytest
 
 from app.repositories.user_repository import UserRepository
+
+from tests.utils import get_fields
 
 
 class TestUserRepository:
@@ -19,14 +19,8 @@ class TestUserRepository:
         assert isinstance(self.repo, UserRepository)
 
     def test_messages(self) -> None:
-        def get_class_vars(class_):
-            return [attr for attr in class_.__dict__ if (
-                getattr(class_, attr) is not None and
-                not isinstance(getattr(class_, attr), Callable) and
-                not attr.startswith('__')
-            )]
-        self_class_messages = get_class_vars(self.__class__)
-        user_class_messages = get_class_vars(UserRepository)
+        self_class_messages = get_fields(self.__class__)
+        user_class_messages = get_fields(UserRepository)
         assert self_class_messages == user_class_messages
         for message in self_class_messages:
             assert getattr(self, message) == getattr(UserRepository, message)
