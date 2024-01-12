@@ -1,9 +1,11 @@
 from typing import Annotated
+
 from fastapi import Depends
 
 from app.core import async_session
 from app.models.user import User
-from app.repositories.generic_db_repo.generic_db_repository import CRUDBaseRepository
+from app.repositories.generic_db_repo.generic_db_repository import \
+    CRUDBaseRepository
 
 
 class UserRepository(CRUDBaseRepository):

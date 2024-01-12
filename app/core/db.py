@@ -1,4 +1,4 @@
-from typing import Annotated, Any, Generator
+from typing import Annotated, Any, AsyncGenerator
 
 from fastapi import Depends
 from sqlalchemy import MetaData
@@ -33,7 +33,7 @@ engine = create_async_engine(settings.database_url)
 AsyncSessionLocal = async_sessionmaker(engine, expire_on_commit=False)
 
 
-async def get_async_session() -> Generator[AsyncSession, Any, None]:
+async def get_async_session() -> AsyncGenerator[AsyncSession, Any]:
     async with AsyncSessionLocal() as async_session:
         yield async_session
 

@@ -1,12 +1,16 @@
 from http import HTTPStatus
+
 import pytest
 from httpx import AsyncClient
 
 from app.core.config import settings
 from tests.unit_tests.test_user_repo import TestUserRepository as UserRepo
-from .endpoints_test_lib.endpoints_testlib import assert_response, assert_msg, not_allowed_methods_test, standard_tests
+
 from ..data import *
 from ..utils import *
+from .endpoints_test_lib.endpoints_testlib import (assert_msg, assert_response,
+                                                   not_allowed_methods_test,
+                                                   standard_tests)
 
 USER_NOT_FOUND_MSG = UserRepo.NOT_FOUND
 
