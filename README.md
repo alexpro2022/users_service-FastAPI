@@ -80,7 +80,7 @@ nano .env
 ```
 <br>
 
-<details><summary>В виртуальном окружении</summary><br>
+<details><summary>В виртуальном окружении (БД - SQLite)</summary><br>
 
 2. Создайте и активируйте виртуальное окружение:
    * Если у вас Linux/macOS
@@ -121,7 +121,7 @@ pytest --cov --cov-config=.coveragerc
 <h1></h1>
 </details>
 
-<details><summary>В docker-контейнере</summary><br>
+<details><summary>В docker-контейнере (БД - PostgreSQL)</summary><br>
 
 2. Из корневой директории проекта выполните команду:
 ```bash
