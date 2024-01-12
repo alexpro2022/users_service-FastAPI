@@ -1,6 +1,6 @@
 from typing import Callable
 
-from tests.conftest import CREATE_USER_DATA, User, DONE
+from tests.conftest import CREATE_USER_DATA, DONE, User
 
 
 def get_fields(item):
@@ -24,7 +24,7 @@ def check_user(user: list[dict] | dict | User) -> str:
     if isinstance(user, list):
         user = user[0]
     if isinstance(user, User):
-        user = to_dict(user)   
+        user = to_dict(user)
     if isinstance(user, dict):
         assert user['id'] == 1
         assert user['username'] == username
@@ -32,7 +32,7 @@ def check_user(user: list[dict] | dict | User) -> str:
         assert user['registration_date']
         return DONE
     else:
-        assert 0, f'Неверный формат переменной USER - {type(user)}'      
+        assert 0, f'Неверный формат переменной USER - {type(user)}'
 
 
 def empty_list(response_json: list) -> str:

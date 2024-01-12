@@ -1,7 +1,7 @@
 NOW = 'now'
 CREATE_USER_DATA = {'username': 'test_user', 'email': 'test_user@yandex.ru',}
 USER_DATA = CREATE_USER_DATA.copy()
-USER_DATA.update({'id': 1, 'registration_date': NOW})
+USER_DATA.update({'id': 1, 'registration_date': NOW})  # type: ignore
 
 ID = 1
 ENDPOINT = 'user'

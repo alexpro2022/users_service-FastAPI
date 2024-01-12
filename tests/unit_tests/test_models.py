@@ -1,6 +1,6 @@
 import pytest
 
-from tests.conftest import Base, User, USER_DATA
+from tests.conftest import USER_DATA, Base, User
 
 BASE_FIELDS = ('id',)
 USER_MODEL_FIELDS = USER_DATA.keys()
