@@ -187,4 +187,4 @@ cd .. && rm -fr users_service-FastAPI
 
 [Aleksei Proskuriakov](https://github.com/alexpro2022)
 
-[⬆️В начало](#Users-management-service:)
+[⬆️В начало](#users-management-service)
