@@ -52,7 +52,7 @@ def strip_slashes(item: str | None) -> str:
 
 
 def create_endpoint(endpoint: str | None, path_param: int | str | None = None) -> str:
-    return f'/{strip_slashes(endpoint)}/{strip_slashes(path_param)}'.rstrip(' /')
+    return f'/{strip_slashes(endpoint)}/{strip_slashes(path_param)}'.rstrip(' /')  # type: ignore[arg-type]
 
 
 async def get_response(
@@ -96,12 +96,12 @@ async def assert_response(
     if expected_status_code is None:
         match method.upper():
             case 'POST':
-                expected_status_code = (HTTPStatus.OK, HTTPStatus.CREATED)
+                expected_status_code = (HTTPStatus.OK, HTTPStatus.CREATED)  # type: ignore[assignment]
             case 'DELETE':
-                expected_status_code = (HTTPStatus.OK, HTTPStatus.NO_CONTENT)
+                expected_status_code = (HTTPStatus.OK, HTTPStatus.NO_CONTENT)  # type: ignore[assignment]
             case _:
-                expected_status_code = HTTPStatus.OK
-    assert_status(response, expected_status_code)
+                expected_status_code = HTTPStatus.OK  # type: ignore[assignment]
+    assert_status(response, expected_status_code)  # type: ignore[arg-type]
     return response
 
 
@@ -210,5 +210,5 @@ async def get_auth_user_token(async_client: AsyncClient, user: dict | None, regi
     return token
 
 
-def get_headers(token: str | None) -> dict[str:str] | None:
+def get_headers(token: str | None) -> dict[str, str] | None:
     return {'Authorization': f'Bearer {token}'} if token is not None else None

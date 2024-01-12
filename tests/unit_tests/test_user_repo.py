@@ -1,7 +1,6 @@
 import pytest
 
 from app.repositories.user_repository import UserRepository
-
 from tests.utils import get_fields
 
 
